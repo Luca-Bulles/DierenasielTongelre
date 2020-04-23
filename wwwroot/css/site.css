@@ -73,3 +73,15 @@ body {
 .greentext{
     color: green;
 }
+
+.btn-Email {
+    color: white;
+    background-color: #595959;
+    border-color: #595959;
+}
+
+    .btn-Email:hover {
+        color: white;
+        background-color: #595959;
+        border-color: #595959;
+    }
