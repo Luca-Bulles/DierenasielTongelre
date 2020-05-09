@@ -235,3 +235,4 @@ C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreDAL.dll
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreDAL.pdb
+C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\obj\Debug\netcoreapp3.1\Razor\Views\Adopt\Index.cshtml.g.cs
