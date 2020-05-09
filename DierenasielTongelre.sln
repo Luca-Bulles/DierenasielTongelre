@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DierenasielTongelre", "DierenasielTongelre.csproj", "{A4F03BD1-2396-471D-AE4D-98C6B4396EF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DierenasielTongelreDAL", "..\DierenasielTongelreDAL\DierenasielTongelreDAL.csproj", "{4C2B1AF3-5419-4B53-97FC-C965DCC929E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DierenasielTongelreDAL", "..\DierenasielTongelreDAL\DierenasielTongelreDAL.csproj", "{4C2B1AF3-5419-4B53-97FC-C965DCC929E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DierenasielTongelreLogic", "..\DierenasielTongelreLogic\DierenasielTongelreLogic.csproj", "{A5325133-7B39-4239-8CD2-44EE3AF49305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4C2B1AF3-5419-4B53-97FC-C965DCC929E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C2B1AF3-5419-4B53-97FC-C965DCC929E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C2B1AF3-5419-4B53-97FC-C965DCC929E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5325133-7B39-4239-8CD2-44EE3AF49305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5325133-7B39-4239-8CD2-44EE3AF49305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5325133-7B39-4239-8CD2-44EE3AF49305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5325133-7B39-4239-8CD2-44EE3AF49305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
