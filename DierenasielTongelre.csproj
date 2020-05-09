@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Images\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DierenasielTongelreDAL\DierenasielTongelreDAL.csproj" />
   </ItemGroup>
 

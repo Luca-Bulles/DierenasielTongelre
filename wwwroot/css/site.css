@@ -85,3 +85,11 @@ body {
         background-color: #595959;
         border-color: #595959;
     }
+.img-size2 {
+    height: 420px;
+    width: 300px;
+}
+.img-size3{
+    height: 562px;
+    width: 220px;
+}
