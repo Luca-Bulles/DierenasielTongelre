@@ -85,11 +85,10 @@ body {
         background-color: #595959;
         border-color: #595959;
     }
-.img-size2 {
-    height: 420px;
-    width: 300px;
+.img-size {
+    max-height: 500px;
+    max-width: 500px;
 }
-.img-size3{
-    height: 562px;
-    width: 220px;
+.carousel-style{
+    filter: invert(100%);
 }
