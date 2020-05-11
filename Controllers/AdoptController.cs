@@ -31,7 +31,8 @@ namespace DierenasielTongelre.Controllers
                     Color = animal.Color,
                     DateOfBirth = animal.DateOfBirth,
                     Available = animal.Available,
-                    DateOfRegistration = animal.DateOfRegistration
+                    DateOfRegistration = animal.DateOfRegistration,
+                    ImageSrc = animal.ImageSrc
                 });
             }
 

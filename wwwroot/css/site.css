@@ -92,3 +92,7 @@ body {
 .carousel-style{
     filter: invert(100%);
 }
+.image-adoptie{
+    height: 30px;
+    width: 30px;
+}

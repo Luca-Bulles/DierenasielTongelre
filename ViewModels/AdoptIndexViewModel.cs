@@ -13,5 +13,6 @@ namespace DierenasielTongelre.ViewModels
         public DateTime DateOfBirth { get; set; }
         public bool Available { get; set; }
         public DateTime DateOfRegistration { get; set; }
+        public string ImageSrc { get; set; }
     }
 }
