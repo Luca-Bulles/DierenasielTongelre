@@ -14,22 +14,16 @@ namespace DierenasielTongelre.Controllers
 {
     public class AdoptController : Controller
     {
-        private AnimalQueries db;
         private readonly IAnimalLogic _animalLogic;
         public AdoptController(IAnimalLogic animalLogic)
         {
             _animalLogic = animalLogic;
         }
-
-        public AdoptController(AnimalQueries db)
-        {
-            this.db = db;
-        }
         public IActionResult Index()
         {
-            List<AnimalDTO> animals = db.GetAllAnimals();
+            var allAnimals = _animalLogic.GetAllAnimals();
             List<AdoptIndexViewModel> models = new List<AdoptIndexViewModel>();
-            foreach (AnimalDTO animal in animals)
+            foreach (var animal in allAnimals)
             {
                 models.Add(new AdoptIndexViewModel()
                 {
@@ -45,21 +39,21 @@ namespace DierenasielTongelre.Controllers
 
             return View(models);
         }
-        [HttpGet]
-        public ActionResult Edit()
-        {
-            AnimalViewModel animalViewModel = new AnimalViewModel();
-            _animalLogic.GetById(animalViewModel);
+        //[HttpGet]
+        //public ActionResult Edit()
+        //{
+        //    AnimalViewModel animalViewModel = new AnimalViewModel();
+        //    _animalLogic.GetById(animalViewModel);
 
-            return View(animalViewModel);
-        }
-        [HttpPost]
-        public ActionResult Edit(AnimalViewModel animal)
-        {
-            _animalLogic.EditAnimals(animal);
+        //    return View(animalViewModel);
+        //}
+        //[HttpPost]
+        //public ActionResult Edit(AnimalViewModel animal)
+        //{
+        //    _animalLogic.EditAnimals(animal);
 
-            return RedirectToAction("Index");
+        //    return RedirectToAction("Index");
 
-        }
+        //}
     }
 }

@@ -29,7 +29,6 @@ namespace DierenasielTongelre
         {
             services.AddControllersWithViews();
             services.Add(new ServiceDescriptor(typeof(AnimalQueries), new AnimalQueries(Configuration.GetConnectionString("DefaultConnection"))));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

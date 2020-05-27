@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using DierenasielTongelre.Models;
 using DierenasielTongelreDAL.Queries;
 using DierenasielTongelreDAL.DTO;
+using DierenasielTongelreInterfaces.Models;
 
 namespace DierenasielTongelre.Controllers
 {
@@ -22,7 +23,7 @@ namespace DierenasielTongelre.Controllers
 
         public IActionResult Index()
         {
-            List<AnimalDTO> animals = db.GetAllAnimals();
+            List<IAnimal> animals = db.GetAllAnimals();
 
             return View();
         }
