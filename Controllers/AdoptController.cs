@@ -39,7 +39,7 @@ namespace DierenasielTongelre.Controllers
             return View(models);
         }
 
-        public IActionResult Edit()
+        public ActionResult Edit()
         {
             
         }
