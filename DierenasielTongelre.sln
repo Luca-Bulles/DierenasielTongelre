@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DierenasielTongelreDAL", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DierenasielTongelreLogic", "..\DierenasielTongelreLogic\DierenasielTongelreLogic.csproj", "{A5325133-7B39-4239-8CD2-44EE3AF49305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{7604365E-0FE7-4B71-9A00-A20752FC464C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DierenasielTongelreInterfaces", "..\Interfaces\DierenasielTongelreInterfaces.csproj", "{7604365E-0FE7-4B71-9A00-A20752FC464C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

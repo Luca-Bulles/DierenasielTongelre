@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DierenasielTongelreDAL.Queries;
+using DierenasielTongelreLogic.Logic;
+using DierenasielTongelreInterfaces.Logic;
+using DierenasielTongelreInterfaces.Queries;
 
 namespace DierenasielTongelre
 {

@@ -7,12 +7,19 @@ using DierenasielTongelre.Models;
 using DierenasielTongelre.ViewModels;
 using DierenasielTongelreDAL.Queries;
 using DierenasielTongelreDAL.DTO;
+using DierenasielTongelreInterfaces.Models;
+using DierenasielTongelreInterfaces.Logic;
 
 namespace DierenasielTongelre.Controllers
 {
     public class AdoptController : Controller
     {
         private AnimalQueries db;
+        private readonly IAnimalLogic _animalLogic;
+        public AdoptController(IAnimalLogic animalLogic)
+        {
+            _animalLogic = animalLogic;
+        }
 
         public AdoptController(AnimalQueries db)
         {
@@ -38,10 +45,21 @@ namespace DierenasielTongelre.Controllers
 
             return View(models);
         }
-
+        [HttpGet]
         public ActionResult Edit()
         {
-            
+            AnimalViewModel animalViewModel = new AnimalViewModel();
+            _animalLogic.GetById(animalViewModel);
+
+            return View(animalViewModel);
+        }
+        [HttpPost]
+        public ActionResult Edit(AnimalViewModel animal)
+        {
+            _animalLogic.EditAnimals(animal);
+
+            return RedirectToAction("Index");
+
         }
     }
 }

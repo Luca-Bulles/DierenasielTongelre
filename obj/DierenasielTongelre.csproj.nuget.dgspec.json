@@ -69,6 +69,65 @@
         }
       }
     },
+    "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj",
+        "projectName": "DierenasielTongelreLogic",
+        "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj",
+        "packagesPath": "C:\\Users\\luca_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luca_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj": {
+                "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelre\\DierenasielTongelre.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -97,6 +156,9 @@
             "projectReferences": {
               "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj": {
                 "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj"
+              },
+              "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj": {
+                "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj"
               }
             }
           }

@@ -25,6 +25,7 @@
       "DierenasielTongelre/1.0.0": {
         "dependencies": {
           "DierenasielTongelreDAL": "1.0.0",
+          "DierenasielTongelreLogic": "1.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -1911,6 +1912,7 @@
       },
       "DierenasielTongelreDAL/1.0.0": {
         "dependencies": {
+          "DierenasielTongelreInterfaces": "1.0.0",
           "MySql.Data": "8.0.20"
         },
         "runtime": {
@@ -1918,6 +1920,25 @@
         },
         "compile": {
           "DierenasielTongelreDAL.dll": {}
+        }
+      },
+      "DierenasielTongelreInterfaces/1.0.0": {
+        "runtime": {
+          "DierenasielTongelreInterfaces.dll": {}
+        },
+        "compile": {
+          "DierenasielTongelreInterfaces.dll": {}
+        }
+      },
+      "DierenasielTongelreLogic/1.0.0": {
+        "dependencies": {
+          "DierenasielTongelreDAL": "1.0.0"
+        },
+        "runtime": {
+          "DierenasielTongelreLogic.dll": {}
+        },
+        "compile": {
+          "DierenasielTongelreLogic.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4545,6 +4566,16 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "DierenasielTongelreDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DierenasielTongelreInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DierenasielTongelreLogic/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

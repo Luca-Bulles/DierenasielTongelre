@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DierenasielTongelreDAL\DierenasielTongelreDAL.csproj" />
+    <ProjectReference Include="..\DierenasielTongelreLogic\DierenasielTongelreLogic.csproj" />
   </ItemGroup>
 
 
