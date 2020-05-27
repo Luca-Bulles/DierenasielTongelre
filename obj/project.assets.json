@@ -2266,6 +2266,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "DierenasielTongelreInterfaces": "1.0.0",
           "MySql.Data": "8.0.20"
         },
         "compile": {
@@ -2273,6 +2274,16 @@
         },
         "runtime": {
           "bin/placeholder/DierenasielTongelreDAL.dll": {}
+        }
+      },
+      "DierenasielTongelreInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DierenasielTongelreInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DierenasielTongelreInterfaces.dll": {}
         }
       }
     }
@@ -7356,6 +7367,11 @@
       "type": "project",
       "path": "../DierenasielTongelreDAL/DierenasielTongelreDAL.csproj",
       "msbuildProject": "../DierenasielTongelreDAL/DierenasielTongelreDAL.csproj"
+    },
+    "DierenasielTongelreInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/DierenasielTongelreInterfaces.csproj",
+      "msbuildProject": "../Interfaces/DierenasielTongelreInterfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
