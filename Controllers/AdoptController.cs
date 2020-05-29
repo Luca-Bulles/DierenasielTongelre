@@ -55,5 +55,11 @@ namespace DierenasielTongelre.Controllers
         //    return RedirectToAction("Index");
 
         //}
+        public ActionResult Delete(int id)
+        {
+            _animalLogic.DeleteAnimal(id);
+
+            return RedirectToAction("Index");
+        }
     }
 }
