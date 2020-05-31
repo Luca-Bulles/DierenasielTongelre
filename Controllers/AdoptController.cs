@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DierenasielTongelre.Models;
 using DierenasielTongelre.ViewModels;
-using DierenasielTongelreDAL.Queries;
-using DierenasielTongelreDAL.DTO;
 using DierenasielTongelreInterfaces.Models;
 using DierenasielTongelreInterfaces.Logic;
 using DierenasielTongelreLogic.Logic;
