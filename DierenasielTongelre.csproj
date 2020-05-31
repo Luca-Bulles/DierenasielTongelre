@@ -9,8 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DierenasielTongelreDAL\DierenasielTongelreDAL.csproj" />
+    <ProjectReference Include="..\DierenasielTongelreFactory\DierenasielTongelreFactory.csproj" />
     <ProjectReference Include="..\DierenasielTongelreLogic\DierenasielTongelreLogic.csproj" />
+    <ProjectReference Include="..\Interfaces\DierenasielTongelreInterfaces.csproj" />
   </ItemGroup>
 
 

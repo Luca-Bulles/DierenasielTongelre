@@ -2276,6 +2276,20 @@
           "bin/placeholder/DierenasielTongelreDAL.dll": {}
         }
       },
+      "DierenasielTongelreFactory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DierenasielTongelreInterfaces": "1.0.0",
+          "DierenasielTongelreLogic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DierenasielTongelreFactory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DierenasielTongelreFactory.dll": {}
+        }
+      },
       "DierenasielTongelreInterfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2290,7 +2304,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DierenasielTongelreDAL": "1.0.0"
+          "DierenasielTongelreDAL": "1.0.0",
+          "DierenasielTongelreInterfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DierenasielTongelreLogic.dll": {}
@@ -7381,6 +7396,11 @@
       "path": "../DierenasielTongelreDAL/DierenasielTongelreDAL.csproj",
       "msbuildProject": "../DierenasielTongelreDAL/DierenasielTongelreDAL.csproj"
     },
+    "DierenasielTongelreFactory/1.0.0": {
+      "type": "project",
+      "path": "../DierenasielTongelreFactory/DierenasielTongelreFactory.csproj",
+      "msbuildProject": "../DierenasielTongelreFactory/DierenasielTongelreFactory.csproj"
+    },
     "DierenasielTongelreInterfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/DierenasielTongelreInterfaces.csproj",
@@ -7394,7 +7414,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DierenasielTongelreDAL >= 1.0.0",
+      "DierenasielTongelreFactory >= 1.0.0",
+      "DierenasielTongelreInterfaces >= 1.0.0",
       "DierenasielTongelreLogic >= 1.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3"
     ]
@@ -7429,11 +7450,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj": {
-              "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreDAL\\DierenasielTongelreDAL.csproj"
+            "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreFactory\\DierenasielTongelreFactory.csproj": {
+              "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreFactory\\DierenasielTongelreFactory.csproj"
             },
             "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj": {
               "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\DierenasielTongelreLogic\\DierenasielTongelreLogic.csproj"
+            },
+            "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\Interfaces\\DierenasielTongelreInterfaces.csproj": {
+              "projectPath": "C:\\Users\\luca_\\source\\repos\\Dierenasiel\\Interfaces\\DierenasielTongelreInterfaces.csproj"
             }
           }
         }

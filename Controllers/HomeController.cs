@@ -6,24 +6,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DierenasielTongelre.Models;
-using DierenasielTongelreDAL.Queries;
-using DierenasielTongelreDAL.DTO;
 using DierenasielTongelreInterfaces.Models;
+using DierenasielTongelreInterfaces.Logic;
+using DierenasielTongelreLogic;
 
 namespace DierenasielTongelre.Controllers
 {
     public class HomeController : Controller
     {
-        private AnimalQueries db;
-
-        public HomeController(AnimalQueries db)
-        {
-            this.db = db;
-        }
 
         public IActionResult Index()
         {
-            List<IAnimal> animals = db.GetAllAnimals();
 
             return View();
         }

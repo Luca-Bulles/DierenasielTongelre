@@ -9,15 +9,17 @@ using DierenasielTongelreDAL.Queries;
 using DierenasielTongelreDAL.DTO;
 using DierenasielTongelreInterfaces.Models;
 using DierenasielTongelreInterfaces.Logic;
+using DierenasielTongelreLogic.Logic;
+using DierenasielTongelreFactory;
 
 namespace DierenasielTongelre.Controllers
 {
     public class AdoptController : Controller
     {
         private readonly IAnimalLogic _animalLogic;
-        public AdoptController(IAnimalLogic animalLogic)
+        public AdoptController()
         {
-            _animalLogic = animalLogic;
+            _animalLogic = AnimalFactory.GetAnimalLogic();
         }
         public IActionResult Index()
         {

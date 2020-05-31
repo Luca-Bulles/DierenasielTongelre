@@ -12,6 +12,7 @@ using DierenasielTongelreDAL.Queries;
 using DierenasielTongelreLogic.Logic;
 using DierenasielTongelreInterfaces.Logic;
 using DierenasielTongelreInterfaces.Queries;
+using Microsoft.AspNetCore.Http;
 
 namespace DierenasielTongelre
 {
@@ -27,8 +28,13 @@ namespace DierenasielTongelre
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
             services.AddControllersWithViews();
-            services.Add(new ServiceDescriptor(typeof(AnimalQueries), new AnimalQueries(Configuration.GetConnectionString("DefaultConnection"))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

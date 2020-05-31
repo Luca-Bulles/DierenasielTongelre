@@ -241,3 +241,5 @@ C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\obj\Debug\netcoreapp3.1\Razor\Views\Adopt\Edit.cshtml.g.cs
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreLogic.dll
 C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreLogic.pdb
+C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreFactory.dll
+C:\Users\luca_\source\repos\Dierenasiel\DierenasielTongelre\bin\Debug\netcoreapp3.1\DierenasielTongelreFactory.pdb
