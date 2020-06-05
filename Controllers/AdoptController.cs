@@ -27,6 +27,7 @@ namespace DierenasielTongelre.Controllers
             {
                 models.Add(new AdoptIndexViewModel()
                 {
+                    Id = animal.Id,
                     Name = animal.Name,
                     Race = animal.Race,
                     Color = animal.Color,
