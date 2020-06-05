@@ -40,22 +40,22 @@ namespace DierenasielTongelre.Controllers
 
             return View(models);
         }
-        //[HttpGet]
-        //public ActionResult Edit()
-        //{
-        //    AnimalViewModel animalViewModel = new AnimalViewModel();
-        //    _animalLogic.GetById(animalViewModel);
+        [HttpGet]
+        public ActionResult Edit()
+        {
+            AnimalViewModel animalViewModel = new AnimalViewModel();
+            _animalLogic.GetById(animalViewModel);
 
-        //    return View(animalViewModel);
-        //}
-        //[HttpPost]
-        //public ActionResult Edit(AnimalViewModel animal)
-        //{
-        //    _animalLogic.EditAnimals(animal);
+            return View(animalViewModel);
+        }
+        [HttpPost]
+        public ActionResult Edit(AnimalViewModel animal)
+        {
+            _animalLogic.EditAnimals(animal);
 
-        //    return RedirectToAction("Index");
+            return RedirectToAction("Index");
 
-        //}
+        }
         public ActionResult Delete(int id)
         {
             _animalLogic.DeleteAnimal(id);
