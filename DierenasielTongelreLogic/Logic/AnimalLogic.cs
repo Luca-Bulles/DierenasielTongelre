@@ -33,5 +33,9 @@ namespace DierenasielTongelreLogic.Logic
         {
             animalQueries.DeleteAnimal(id);
         }
+        public void CreateAnimal(IAnimal animal)
+        {
+            animalQueries.CreateAnimal(animal);
+        }
     }
 }

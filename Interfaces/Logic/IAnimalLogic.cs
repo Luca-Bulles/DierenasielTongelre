@@ -10,6 +10,7 @@ namespace DierenasielTongelreInterfaces.Logic
         IAnimal EditAnimals(IAnimal animal);
         IAnimal GetById(IAnimal animal);
         IEnumerable<IAnimal> GetAllAnimals();
-        void DeleteAnimal(int id); 
+        void DeleteAnimal(int id);
+        void CreateAnimal(IAnimal animal);
     }
 }

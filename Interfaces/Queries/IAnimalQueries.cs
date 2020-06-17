@@ -9,8 +9,8 @@ namespace DierenasielTongelreInterfaces.Queries
     {
         void EditAnimals(IAnimal animal);
         IAnimal GetById(IAnimal animal);
-        //List<AnimalDTO> GetAllAnimals();
         void DeleteAnimal(int id);
         IEnumerable<IAnimal> GetAllAnimals();
+        void CreateAnimal(IAnimal animal);
     }
 }

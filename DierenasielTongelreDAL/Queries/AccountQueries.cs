@@ -20,7 +20,7 @@ namespace DierenasielTongelreDAL.Queries
             return new MySqlConnection(ConnectionString);
         }
         public List<AccountDTO> GetAllAccounts()
-        {
+        {//query precies opvragen wat je precies nodig hebt
             string query = "Select * FROM account;";
             List<AccountDTO> accounts = new List<AccountDTO>();
 

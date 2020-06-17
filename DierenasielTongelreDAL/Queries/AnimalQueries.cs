@@ -22,7 +22,7 @@ namespace DierenasielTongelreDAL.Queries
         {
             return new MySqlConnection(ConnectionString);
         }
-
+        //Update in CRUD
         public void EditAnimals(IAnimal animal)
         {
             string query = "UPDATE animal SET Name = @Name, Race = @Race, Color = @Color, DateOfBirth = @DateOfBirth, Available = @Available, DateOfRegistration = @DateOfRegistration, ImageSrc = @ImageSrc WHERE id = @id;";
@@ -44,7 +44,7 @@ namespace DierenasielTongelreDAL.Queries
                 conn.Close();
             }
         }
-
+        //Delete in CRUD
         public void DeleteAnimal(int id)
         {
             string query = "DELETE FROM animal WHERE id = @id;";
@@ -75,7 +75,7 @@ namespace DierenasielTongelreDAL.Queries
             }
             return animal;
         }
-
+        //Read in CRUD
         public IEnumerable<IAnimal> GetAllAnimals()
         {
             string query = "Select * FROM animal;";
@@ -106,6 +106,31 @@ namespace DierenasielTongelreDAL.Queries
 
             return animals;
         }
+
+        //Create in CRUD
+        public void CreateAnimal(IAnimal animal)
+        {
+            string query = "INSERT INTO animal VALUES (@id, @Name, @Race, @Color, @DateOfBirth, @Available, @DateOfRegistration, @ImageSrc); ";
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@id", animal.Id);
+                cmd.Parameters.AddWithValue("@Name", animal.Name);
+                cmd.Parameters.AddWithValue("@Race", animal.Race);
+                cmd.Parameters.AddWithValue("@Color", animal.Color);
+                cmd.Parameters.AddWithValue("@DateOfBirth", animal.DateOfBirth);
+                cmd.Parameters.AddWithValue("@Available", animal.Available);
+                cmd.Parameters.AddWithValue("@DateOfRegistration", animal.DateOfRegistration);
+                cmd.Parameters.AddWithValue("@ImageSrc", animal.ImageSrc);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+       
+        }
+
     }
     
 }
