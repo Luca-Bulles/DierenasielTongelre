@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DierenasielTongelreDAL.Queries;
 using DierenasielTongelreInterfaces.Logic;
 using DierenasielTongelreInterfaces.Models;
 using DierenasielTongelreInterfaces.Queries;
@@ -10,10 +9,10 @@ namespace DierenasielTongelreLogic.Logic
 {
     public class AnimalLogic: IAnimalLogic
     {
-        private AnimalQueries animalQueries {get;}
-        public AnimalLogic()
+        private IAnimalQueries animalQueries {get;}
+        public AnimalLogic(IAnimalQueries _animalQueries)
         {
-            this.animalQueries = new AnimalQueries();
+            animalQueries = _animalQueries;
         }
         public IAnimal EditAnimals(IAnimal animal)
         {
