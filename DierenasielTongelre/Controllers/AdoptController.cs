@@ -62,7 +62,15 @@ namespace DierenasielTongelre.Controllers
 
             return RedirectToAction("Index");
         }
-        public ActionResult Create(IAnimal animal)
+        [HttpGet]
+        public ActionResult Create()
+        {
+            var animal = new AnimalViewModel();
+
+            return View(animal);
+        }
+        [HttpPost]
+        public ActionResult Create(AnimalViewModel animal)
         {
             _animalLogic.CreateAnimal(animal);
 
